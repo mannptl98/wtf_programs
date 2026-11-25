@@ -1,0 +1,30 @@
+[
+    {
+        "id": "W261",
+        "destination": "Paris",
+        "duration": "5 Days/4 Nights",
+        "price": 75000,
+        "description": "Explore the Eiffel Tower,Louvre Museum and beautiful streets of Paris"
+    },
+    {
+        "id": "W262",
+        "destination": "Goa",
+        "duration": "4 Days/3 Nights",
+        "price": 50000,
+        "description": "Explore the beautiful beaches of Goa and experience the history"
+    },
+    {
+        "id": "W263",
+        "destination": "Dubai",
+        "duration": "10 Days/9 Nights",
+        "price": 175000,
+        "description": "Explore the luxury Shopping malls of UAE"
+    },
+    {
+        "id": "W264",
+        "destination": "Kerala",
+        "duration": "5 Days/4 Nights",
+        "price": 85000,
+        "description": "Explore the historic plases of Kerala"
+    }
+]

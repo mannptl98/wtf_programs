@@ -1,0 +1,288 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #ffffff;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #176b87;
+    font-size: 25px;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #176b87;
+}
+
+/* Buttons */
+button {
+    background-color: #176b87;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+button:hover {
+    background-color: #10536b;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #e3f1f5;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    color: #164e63;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 17px;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+#welcome {
+    margin-top: 20px;
+    font-weight: 600;
+    color: #176b87;
+}
+
+/* Common Section Styling */
+section {
+    padding: 65px 7%;
+}
+
+section h2 {
+    text-align: center;
+    color: #164e63;
+    font-size: 28px;
+    margin-bottom: 35px;
+}
+
+/* Packages Section */
+#packages {
+    background-color: #ffffff;
+}
+
+#packageContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 25px;
+}
+
+/* Package Cards */
+.package-card {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+
+}
+
+.package-card:hover {
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
+}
+
+.package-card h3 {
+    color: #176b87;
+    margin-bottom: 12px;
+}
+
+.package-card p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Loading and Error Messages */
+#loading {
+    text-align: center;
+    color: #176b87;
+    margin: 20px 0;
+}
+
+#error {
+    text-align: center;
+    color: #d32f2f;
+    margin-top: 20px;
+}
+
+/* Preferences Section */
+#preferences {
+    background-color: #f5f7fa;
+    text-align: center;
+}
+
+#preferences label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: 600;
+    color: #444;
+}
+
+#destination {
+    width: 280px;
+    max-width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 15px;
+    outline: none;
+}
+
+#destination:focus {
+    border-color: #176b87;
+}
+
+#savedMessage,
+#sessionInfo {
+    margin-top: 15px;
+    color: #176b87;
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    background-color: #164e63;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Dark Theme Support */
+body.dark-theme {
+    background-color: #1e293b;
+    color: #f1f5f9;
+}
+
+body.dark-theme header,
+body.dark-theme #packages,
+body.dark-theme .package-card {
+    background-color: #263548;
+    color: #f1f5f9;
+}
+
+body.dark-theme nav a {
+    color: #f1f5f9;
+}
+
+body.dark-theme .hero,
+body.dark-theme #preferences {
+    background-color: #334155;
+}
+
+body.dark-theme section h2,
+body.dark-theme .hero h2,
+body.dark-theme .package-card h3 {
+    color: #7dd3fc;
+}
+
+body.dark-theme .hero p,
+body.dark-theme .package-card p {
+    color: #cbd5e1;
+}
+
+body.dark-theme #destination {
+    background-color: #263548;
+    color: white;
+    border-color: #64748b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 18px 5%;
+    }
+
+    nav {
+        gap: 18px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    .hero {
+        padding: 70px 20px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    section {
+        padding: 45px 5%;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    #destination {
+        width: 100%;
+    }
+}
